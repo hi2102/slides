@@ -1,7 +1,13 @@
 
+import { MouseEventHandler } from 'react';
 import './Menu.css'
 
-export default function Menu({onMouseDown, visibility}) {
+interface IProps {
+  onMouseDown: MouseEventHandler<HTMLUListElement>
+  visibility: boolean
+}
+
+export default function Menu({onMouseDown, visibility}: IProps) {
   const viewState = (visibility === true) ? 'show' : 'hide'
   const menus = ['Home', 'About', 'Contact', 'Search'];
   
