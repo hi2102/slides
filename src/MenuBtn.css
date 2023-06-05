@@ -1,0 +1,22 @@
+#roundBtn {
+  background-color: #96d9ff;
+  margin-top: 1.25rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  border: 0.625rem soild #0065a6;
+  outline: none;
+  transition: all 0.2s cubic-bezier(0, 1.26, 0.8, 1.28);
+
+  &:hover {
+    cursor: pointer;
+    background-color: #96d9ff;
+    border-color: #003557;
+    transform: scale(1.2, 1.2);
+  }
+
+  &:active {
+    border-color: #003557;
+    background-color: #fff;
+  }
+}
